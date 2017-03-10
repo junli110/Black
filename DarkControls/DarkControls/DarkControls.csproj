@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30143CFA-12FB-43DE-AB75-D7D9C7073E7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DarkControls</RootNamespace>
+    <AssemblyName>DarkControls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AutoCloseMsgBox.cs" />
+    <Compile Include="Controls\BAutoMsgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BAutoMsgForm.Designer.cs">
+      <DependentUpon>BAutoMsgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BButton.Designer.cs">
+      <DependentUpon>BButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BDateTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BForm.Designer.cs">
+      <DependentUpon>BForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BGridViewContorl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BGridXml.cs" />
+    <Compile Include="Controls\BindingCollection.cs" />
+    <Compile Include="Controls\BLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BMessageBox.Designer.cs">
+      <DependentUpon>BMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BMonthCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BMonthCalendar.Designer.cs">
+      <DependentUpon>BMonthCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BMonthCalendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BMonthCalendarForm.Designer.cs">
+      <DependentUpon>BMonthCalendarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BMsgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BMsgForm.Designer.cs">
+      <DependentUpon>BMsgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BPanel.Designer.cs">
+      <DependentUpon>BPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BScrollbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BTab.Designer.cs">
+      <DependentUpon>BTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BTreeView.Designer.cs">
+      <DependentUpon>BTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Enums.cs" />
+    <Compile Include="Controls\Events.cs" />
+    <Compile Include="Controls\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FormPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\FormPanel.Designer.cs">
+      <DependentUpon>FormPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FormTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\FormTab.Designer.cs">
+      <DependentUpon>FormTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmMessageBox.designer.cs">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\FrmTest.Designer.cs">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IconButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\IconFont.cs" />
+    <Compile Include="Controls\IconType.cs" />
+    <Compile Include="Controls\NativeMethods.cs" />
+    <Compile Include="Controls\Node.cs" />
+    <Compile Include="Controls\ObjectPropertyCompare.cs" />
+    <Compile Include="Controls\ResourceFont.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceFont.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Structs.cs" />
+    <Compile Include="Controls\Win32API.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\BDateTimePicker.resx">
+      <DependentUpon>BDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BForm.resx">
+      <DependentUpon>BForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BMonthCalendarForm.resx">
+      <DependentUpon>BMonthCalendarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BMsgForm.resx">
+      <DependentUpon>BMsgForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BPanel.resx">
+      <DependentUpon>BPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BScrollbar.resx">
+      <DependentUpon>BScrollbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BTreeView.resx">
+      <DependentUpon>BTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormPanel.resx">
+      <DependentUpon>FormPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormTab.resx">
+      <DependentUpon>FormTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmMessageBox.resx">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FrmTest.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ResourceFont.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceFont.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\iconfont.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deposit01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deposit02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moneyArrow01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moneyArrow02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdgray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\withdraw01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\withdraw02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出入金.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSubLogBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSubLogGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSubscriptionBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSubscriptionGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSubSerBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSubSerGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\撤单灰色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\撤单蓝色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\成交灰色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\成交蓝色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\持仓流水blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\持仓流水grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\交易所转银行.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\买入.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\卖出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\配号查询灰色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\配号查询蓝色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\申购.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\委托灰色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\委托蓝色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\银行转交易所.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\中签查询灰色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\中签查询蓝色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\资金持仓灰色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\资金持仓蓝色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\资金流水blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\资金流水grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FSubsciption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\普通交易.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\市价委托.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\提货申请.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改密码.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\银行转账.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
